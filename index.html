@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="jobapp-style.css" />
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <div class="head"><h2>JOB APPLICATION FORM</h2></div>
+    <div class="form">
+      <form>
+        <fieldset>
+          <legend>PERSONAL INFORMATION</legend>
+
+          <label for="text" class="clabel">Candidate Name :</label>
+          <input
+            type="text"
+            name="fname"
+            placeholder="First Name"
+            required
+            size="40"
+            class="cinput"
+          />
+          <input
+            type="text"
+            name="mname"
+            placeholder="Middle Name"
+            size="40"
+            class="cinput"
+          />
+          <input
+            type="text"
+            name="lname"
+            placeholder="Last Name"
+            required
+            size="40"
+            class="cinput"
+          /><br />
+
+          <label for="text" class="clabel"> Gender :</label>
+          <input
+            type="radio"
+            checked="checked"
+            name="gender"
+            value="Male"
+            class="gender_child"
+          />Male
+          <input
+            type="radio"
+            checked="checked"
+            name="gender"
+            value="Female"
+            class="gender_child"
+          />Female
+          <input
+            type="radio"
+            checked="checked"
+            name="gender"
+            value="Other"
+            class="gender_child"
+          />Other<br />
+
+          <label for="text" class="clabel"> Date of Birth :</label>
+          <input type="date" name="DOB" class="dob" required /><br />
+
+          <label for="text" class="clabel"> Mobile No. :</label>
+          <input
+            type="tel"
+            name="mobile"
+            maxlength="10"
+            class="mobile"
+            required
+          />
+
+          <label for="text" class="clabel"> Email ID :</label>
+          <input type="email" name="email" required class="email_id" />
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend>ADDRESS</legend>
+          <fieldset>
+            <legend class="p_address">Permanent Address :</legend>
+
+            <label for="text" class="clabel">Address : </label>
+            <input
+              type="text"
+              name="address"
+              placeholder="Address Line 1"
+              required
+              class="add_input"
+            />
+            <input
+              type="text"
+              name="address"
+              placeholder="Address Line 2"
+              class="add_input"
+            /><br />
+
+            <label for="text" class="clabel">City / Town :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="City/Town"
+              class="add_input"
+            />
+
+            <label for="text" class="clabel">PO :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="Post Office"
+              class="add_input"
+            /><br />
+
+            <label for="text" class="clabel">PIN :</label>
+            <input
+              type="PIN"
+              maxlength="6"
+              name="address"
+              placeholder="Pincode"
+              class="add_input"
+            />
+
+            <label for="text" class="clabel">District :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="District"
+              class="add_input"
+            /><br />
+
+            <label for="text" class="clabel">State :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="State"
+              class="add_input"
+            />
+          </fieldset>
+
+          <label for="text" class="label_checkbox"></label>
+          <input type="checkbox" name="checked" class="add_check" />
+          Current Address same as Permanent Address.
+
+          <fieldset>
+            <legend class="P_address">Current Address :</legend>
+
+            <label for="text" class="clabel">Address :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="Address Line 1"
+              required
+              class="add_input"
+            />
+            <input
+              type="text"
+              name="address"
+              placeholder="Address Line 2"
+              class="add_input"
+            /><br />
+
+            <label for="text" class="clabel">City / Town :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="City/Town"
+              class="add_input"
+            />
+
+            <label for="text" class="clabel">PO :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="Post Office"
+              class="add_input"
+            /><br />
+
+            <label for="text" class="clabel">PIN :</label>
+            <input
+              type="PIN"
+              maxlength="6"
+              name="address"
+              placeholder="Pincode"
+              class="add_input"
+            />
+
+            <label for="text" class="clabel">District :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="District"
+              class="add_input"
+            /><br />
+
+            <label for="text" class="clabel">State :</label>
+            <input
+              type="text"
+              name="address"
+              placeholder="State"
+              class="add_input"
+            />
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Skills</legend>
+
+          <div id="RNCbox">
+            <input type="checkbox" name="ajax" />JavaScript<br />
+            <input type="checkbox" name="html" />HTML<br />
+            <input type="checkbox" name="css" />CSS<br />
+            <input type="checkbox" name="js" />React<br />
+            <input type="checkbox" name="js" />AngularJS<br />
+            <input type="checkbox" name="js" />TypeScript<br />
+            <input type="checkbox" name="js" />Elm<br />
+            <input type="checkbox" name="mysql" />MySQL<br />
+            <input type="checkbox" name="php" />PHP<br />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Documents</legend>
+
+          <label for="text" class="DU_label">Passport Size Photo :</label>
+          <input type="file" class="DU_input" required /><br />
+
+          <label for="text" class="DU_label">Resume :</label>
+          <input type="file" class="DU_input" required />
+        </fieldset>
+
+        <div class="bttndiv">
+          <button class="bttns" type="back" value="back">Back</button>
+          <button class="bttns" type="submit" value="submit">Submit</button>
+          <button class="bttns" type="reset" value="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
