@@ -111,6 +111,7 @@ legend {
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 4px;
   border: none;
+  margin-top: 15px;
 }
 
 .p_address {
@@ -118,7 +119,7 @@ legend {
 }
 
 .add_input {
-  width: 400px;
+  width: 300px;
   padding: 10px;
   margin: 5px 40px 15px 5px;
   text-transform: uppercase;
